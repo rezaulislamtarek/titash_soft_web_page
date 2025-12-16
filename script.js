@@ -11,7 +11,7 @@ navToggle?.addEventListener('click', () => {
 });
 
 const revealables = document.querySelectorAll(
-  '.card, .timeline-step, .testimonial-grid article, .contact-card'
+  '.card, .process-step, .showcase-card, .team-card, .contact-panel, .hero-media-card'
 );
 
 const handleReveal = () => {

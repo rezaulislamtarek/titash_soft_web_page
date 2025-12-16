@@ -1,518 +1,407 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Titash Soft | Software Solutions & Consulting</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Titash Soft | Modern Product Engineering Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
     <header class="hero" id="top">
         <nav class="nav">
-            <div class="logo">Titash <span>Soft</span></div>
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+            <a class="logo" href="#top">Titash <span>Soft</span></a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
             <ul class="nav-links" id="navLinks">
-                <li><a href="#solutions">Solutions</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a class="btn btn-outline" href="#contact">Talk to us</a></li>
+                <li><a href="#solutions">Capabilities</a></li>
+                <li><a href="#process">Approach</a></li>
+                <li><a href="#projects">Work</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a class="btn btn-outline" href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <div class="hero-content">
-            <p class="eyebrow">Building reliable digital products since 2024</p>
-            <h1>We craft software that scales with your ambition.</h1>
-            <p class="subtitle">Titash Soft partners with ambitious teams to design, build, and maintain cloud-native applications that delight customers and accelerate growth.</p>
-            <div class="cta-group">
-                <a class="btn" href="#contact">Start a project</a>
-                <a class="btn btn-outline" href="#solutions">Our approach</a>
+        <div class="hero-inner">
+            <div class="hero-text">
+                <p class="eyebrow">Product engineering studio</p>
+                <h1>Bold digital experiences built for scale.</h1>
+                <p class="subtitle">From blue-sky prototypes to enterprise-grade platforms, we embed with ambitious teams to ship resilient software with taste.</p>
+                <div class="cta-group">
+                    <a class="btn" href="#contact">Start a build</a>
+                    <a class="btn btn-ghost" href="#projects">See recent work</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-card">
+                        <p class="stat-label">Products launched</p>
+                        <p class="stat-value">28</p>
+                        <p class="stat-note">Fintech, civic, logistics</p>
+                    </div>
+                    <div class="stat-card">
+                        <p class="stat-label">On-time delivery</p>
+                        <p class="stat-value">98%</p>
+                        <p class="stat-note">Measured across the last 12 sprints</p>
+                    </div>
+                    <div class="stat-card">
+                        <p class="stat-label">Client satisfaction</p>
+                        <p class="stat-value">97%</p>
+                        <p class="stat-note">Clients renew multi-year</p>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="hero-metrics">
-            <div>
-                <p class="metric-label">Products shipped</p>
-                <p class="metric-value">15+</p>
-            </div>
-            <div>
-                <p class="metric-label">Uptime managed</p>
-                <p class="metric-value">99.98%</p>
-            </div>
-            <div>
-                <p class="metric-label">Client NPS</p>
-                <p class="metric-value">62</p>
+            <div class="hero-media">
+                <div class="hero-media-card">
+                    <p class="meta">Active sprints</p>
+                    <h3>04 cross-functional pods</h3>
+                    <p>Designers, engineers, and QA in a single lane shipping weekly increments.</p>
+                    <ul>
+                        <li>Figma to production in days</li>
+                        <li>24/7 observability coverage</li>
+                        <li>Async-first delivery rituals</li>
+                    </ul>
+                </div>
+                <div class="hero-media-card secondary">
+                    <p class="meta">Latest launch</p>
+                    <h3>Smart Bancharampur</h3>
+                    <p>Smart Bancharampur is the go-to Android companion for navigating the Brahmanbaria upazila, covering services, landmarks, unions, and commuting routes between Dhaka and Bancharampur.</p>
+                    <ul>
+                        <li>Comprehensive directory of schools, colleges, and cultural sites</li>
+                        <li>Instant access to emergency contacts, doctor schedules, and phone booking</li>
+                        <li>Transport insights, local utilities, and community updates in one place</li>
+                    </ul>
+                    <a class="hero-link" href="https://smartbancharampur.com" target="_blank" rel="noreferrer">smartbancharampur.com</a>
+                </div>
             </div>
         </div>
     </header>
 
     <main>
-        <section id="solutions" class="section solutions">
-            <div class="section-header">
-                <p class="eyebrow">Solutions</p>
-                <h2>Full-cycle product development for modern teams</h2>
-                <p>From discovery to deployment, we embed with your team to launch quickly, iterate intelligently, and keep your product performing at its best.</p>
+        <section class="partners" aria-label="Partners">
+            <p class="eyebrow">Trusted by civic and growth teams</p>
+            <div class="partner-logos">
+                <span>Smart Bancharampur</span>
+                <span>SFC Food</span>
+                <span>iQuotes</span>
+                <span>JobFinder</span>
+                <span>DiAtomicSoft</span>
+            </div>
+        </section>
+
+        <section id="solutions" class="section capabilities">
+            <div class="section-heading">
+                <p class="eyebrow">Capabilities</p>
+                <h2>Strategy, design, and engineering under one roof.</h2>
+                <p>We pair a modern product mindset with pragmatic engineering to help you validate faster, scale reliably, and iterate with confidence.</p>
             </div>
             <div class="card-grid">
                 <article class="card">
-                    <div class="card-icon icon-animate" aria-hidden="true">
-                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 22l14-10 14 10v16H10V22z" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M24 28v10" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
-                        </svg>
-                    </div>
-                    <h3>Product Strategy</h3>
-                    <p>Customer research, product roadmaps, and measurable success metrics that align engineering with business goals.</p>
-                    <ul>
-                        <li>Design sprints</li>
-                        <li>UX research</li>
-                        <li>Tech audits</li>
-                    </ul>
-                </article>
-                <article class="card">
-                    <div class="card-icon icon-animate" aria-hidden="true">
-                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M8 34h32M12 20h24M18 14l6-6 6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <circle cx="24" cy="28" r="4" stroke="currentColor" stroke-width="2.2"/>
-                        </svg>
-                    </div>
-                    <h3>Cloud Engineering</h3>
-                    <p>Secure architecture and scalable platforms built on AWS, Azure, or GCP with observability baked in.</p>
-                    <ul>
-                        <li>Microservices</li>
-                        <li>DevOps enablement</li>
-                        <li>Managed SRE</li>
-                    </ul>
-                </article>
-                <article class="card">
-                    <div class="card-icon icon-animate" aria-hidden="true">
-                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M14 20h20M14 28h12" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
-                            <path d="M34 14v20l4 4V10l-4 4z" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <rect x="10" y="14" width="20" height="20" rx="4" stroke="currentColor" stroke-width="2.2"/>
-                        </svg>
-                    </div>
-                    <h3>Lifecycle Care</h3>
-                    <p>Continuous delivery, maintenance, and optimization so you can stay focused on your customers.</p>
-                    <ul>
-                        <li>24/7 monitoring</li>
-                        <li>Performance tuning</li>
-                        <li>Product analytics</li>
-                    </ul>
-                </article>
-            </div>
-        </section>
-
-        <section id="capabilities" class="section capabilities">
-            <div class="section-header">
-                <p class="eyebrow">Capabilities</p>
-                <h2>Services built for every layer of your product</h2>
-                <p>Whether you need zero-to-one builds or enterprise modernization, Titash Soft assembles specialists in the platform, channel, and automation stack that moves your business.</p>
-            </div>
-            <div class="cap-grid">
-                <article class="cap-card">
-                    <div class="cap-icon icon-animate" aria-hidden="true">
-                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="10" y="8" width="28" height="32" rx="5" stroke="currentColor" stroke-width="2.2"/>
-                            <circle cx="24" cy="32" r="3" stroke="currentColor" stroke-width="2.2"/>
-                            <path d="M18 15h12" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
-                        </svg>
-                    </div>
-                    <h3>App Development</h3>
-                    <p>Cross-platform product squads that design, code, ship, and iterate resilient apps.</p>
-                </article>
-                <article class="cap-card">
-                    <div class="cap-icon icon-animate" aria-hidden="true">
-                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M18 8h12l4 8v24a4 4 0 0 1-4 4H18a4 4 0 0 1-4-4V16l4-8z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
-                            <path d="M20 20h8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
-                        </svg>
-                    </div>
+                    <div class="card-icon" aria-hidden="true">🤖</div>
                     <h3>Android Engineering</h3>
-                    <p>Kotlin + Jetpack Compose specialists building polished, Play-ready experiences.</p>
+                    <p>Native Kotlin teams build dependable Android experiences across consumer, civic, and enterprise use cases.</p>
+                    <ul>
+                        <li>Offline-first data sync</li>
+                        <li>Play Store deployments</li>
+                        <li>Hardware & sensor integrations</li>
+                    </ul>
                 </article>
-                <article class="cap-card">
-                    <div class="cap-icon icon-animate" aria-hidden="true">
-                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M16 6h16l4 6v24l-4 6H16l-4-6V12l4-6z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
-                            <path d="M20 18h8M20 26h8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
-                        </svg>
-                    </div>
+                <article class="card">
+                    <div class="card-icon" aria-hidden="true">📱</div>
                     <h3>iOS Engineering</h3>
-                    <p>SwiftUI and native integrations tuned for performance, privacy, and App Store success.</p>
+                    <p>Swift and SwiftUI expertise for performant iPhone/iPad apps with rich interactions and accessibility baked in.</p>
+                    <ul>
+                        <li>Modular architecture</li>
+                        <li>App Store publishing</li>
+                        <li>Push, payments, and auth</li>
+                    </ul>
                 </article>
-                <article class="cap-card">
-                    <div class="cap-icon icon-animate" aria-hidden="true">
-                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="8" y="12" width="32" height="24" rx="4" stroke="currentColor" stroke-width="2.2"/>
-                            <path d="M8 20h32" stroke="currentColor" stroke-width="2.2"/>
-                            <path d="M20 36h8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
-                        </svg>
-                    </div>
-                    <h3>Web Development</h3>
-                    <p>Modern front-end systems with React, Next.js, and edge-ready infrastructures.</p>
+                <article class="card">
+                    <div class="card-icon" aria-hidden="true">🌐</div>
+                    <h3>Web & Backend Platforms</h3>
+                    <p>Scalable APIs, admin consoles, and data pipelines powering web products and internal tooling.</p>
+                    <ul>
+                        <li>Microservices & GraphQL</li>
+                        <li>Cloud-native infra (AWS/Azure/GCP)</li>
+                        <li>Observability & DevOps automation</li>
+                    </ul>
                 </article>
-                <article class="cap-card">
-                    <div class="cap-icon icon-animate" aria-hidden="true">
-                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M14 34c0-5.523 4.477-10 10-10s10 4.477 10 10" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
-                            <circle cx="24" cy="16" r="6" stroke="currentColor" stroke-width="2.2"/>
-                        </svg>
-                    </div>
-                    <h3>UX & Research</h3>
-                    <p>Design systems, usability labs, and product strategy to keep users at the center.</p>
+                <article class="card">
+                    <div class="card-icon" aria-hidden="true">🎨</div>
+                    <h3>UI/UX & Product Design</h3>
+                    <p>Design systems, usability research, and prototypes that translate requirements into lovable journeys.</p>
+                    <ul>
+                        <li>Design ops & component libraries</li>
+                        <li>User interviews & testing</li>
+                        <li>Interactive Figma prototypes</li>
+                    </ul>
                 </article>
-                <article class="cap-card">
-                    <div class="cap-icon icon-animate" aria-hidden="true">
-                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 22h28" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
-                            <path d="M16 12h20l4 10-4 10H16l-4-10 4-10z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
-                            <path d="M16 32h20" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
-                        </svg>
-                    </div>
-                    <h3>Digital Marketing</h3>
-                    <p>Acquisition funnels, automation, and analytics tied directly to your product roadmap.</p>
+                <article class="card">
+                    <div class="card-icon" aria-hidden="true">🧪</div>
+                    <h3>QA & Automation</h3>
+                    <p>Dedicated QA engineers provide manual and automated coverage so every release is trustworthy.</p>
+                    <ul>
+                        <li>End-to-end & regression suites</li>
+                        <li>Performance and security checks</li>
+                        <li>CI-integrated reporting</li>
+                    </ul>
                 </article>
-                <article class="cap-card">
-                    <div class="cap-icon icon-animate" aria-hidden="true">
-                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="8" y="12" width="32" height="24" rx="4" stroke="currentColor" stroke-width="2.2"/>
-                            <path d="M16 28h16M16 20h16" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
-                            <circle cx="16" cy="20" r="1.5" fill="currentColor"/>
-                            <circle cx="32" cy="28" r="1.5" fill="currentColor"/>
-                        </svg>
-                    </div>
-                    <h3>Backend Engineering</h3>
-                    <p>Event-driven services, API platforms, and data pipelines built for scale.</p>
-                </article>
-                <article class="cap-card">
-                    <div class="cap-icon icon-animate" aria-hidden="true">
-                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12 30h24" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
-                            <rect x="10" y="14" width="28" height="10" rx="2" stroke="currentColor" stroke-width="2.2"/>
-                            <path d="M18 34v6M30 34v6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
-                        </svg>
-                    </div>
-                    <h3>Automation Scripts</h3>
-                    <p>Custom tools, bots, and integrations that eliminate operational busywork.</p>
+                <article class="card">
+                    <div class="card-icon" aria-hidden="true">📈</div>
+                    <h3>Digital Marketing & Growth</h3>
+                    <p>Acquisition funnels, lifecycle campaigns, and analytics that amplify launches and sustain engagement.</p>
+                    <ul>
+                        <li>SEO + paid media ops</li>
+                        <li>Marketing automation journeys</li>
+                        <li>Attribution & cohort insights</li>
+                    </ul>
                 </article>
             </div>
         </section>
 
-        <section id="services" class="section services">
-            <div class="services-grid">
-                <div class="services-copy">
-                    <p class="eyebrow">How we work</p>
-                    <h2>Expert teams, transparent delivery</h2>
-                    <p>Our cross-functional squads blend product, design, and engineering talent. Weekly demos, paired planning, and data-driven checkpoints keep you in the loop at every milestone.</p>
-                    <div class="pill-group">
-                        <span class="pill">Agile Pods</span>
-                        <span class="pill">Design Systems</span>
-                        <span class="pill">QA Automation</span>
-                        <span class="pill">AI Integrations</span>
-                    </div>
-                </div>
-                <div class="timeline">
-                    <div class="timeline-step">
-                        <span class="step-number icon-animate">1</span>
-                        <div>
-                            <h3>Discover</h3>
-                            <p>Stakeholder workshops turn business goals into a prioritized roadmap.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-step">
-                        <span class="step-number icon-animate">2</span>
-                        <div>
-                            <h3>Build</h3>
-                            <p>Sprint-based execution with integrated QA, security reviews, and performance testing.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-step">
-                        <span class="step-number icon-animate">3</span>
-                        <div>
-                            <h3>Launch & Grow</h3>
-                            <p>Release orchestration, growth experiments, and proactive optimization.</p>
-                        </div>
-                    </div>
-                </div>
+        <section id="process" class="section process">
+            <div class="section-heading">
+                <p class="eyebrow">Approach</p>
+                <h2>A transparent cadence designed for high-trust collaborations.</h2>
+                <p>Every engagement is anchored in rituals that keep stakeholders aligned without slowing the work.</p>
+            </div>
+            <div class="process-grid">
+                <article class="process-step">
+                    <p class="step-label">01</p>
+                    <h3>Blueprint</h3>
+                    <p>Co-create a roadmap, swimlanes, and success metrics while we run architecture spikes.</p>
+                </article>
+                <article class="process-step">
+                    <p class="step-label">02</p>
+                    <h3>Build</h3>
+                    <p>Dual-track discovery and delivery in two-week increments with demo-ready releases.</p>
+                </article>
+                <article class="process-step">
+                    <p class="step-label">03</p>
+                    <h3>Launch</h3>
+                    <p>Automated testing, observability, and playbooks ensure confident releases.</p>
+                </article>
+                <article class="process-step">
+                    <p class="step-label">04</p>
+                    <h3>Scale</h3>
+                    <p>Iterate using product analytics, user feedback, and growth experiments.</p>
+                </article>
             </div>
         </section>
 
-        <section id="testimonials" class="section testimonials">
-            <div class="section-header">
-                <p class="eyebrow">Client stories</p>
-                <h2>Teams that trust Titash Soft</h2>
-                <p>We collaborate with venture-backed startups and enterprise leaders across fintech, health, and manufacturing.</p>
+        <section id="projects" class="section showcase">
+            <div class="section-heading">
+                <p class="eyebrow">Selected work</p>
+                <h2>Recent launches shaping finance, civics, and productivity.</h2>
+                <p>We work like an in-house team, pairing user insight with reliable engineering.</p>
             </div>
-            <div class="testimonial-grid">
-                <article>
-                    <p>“SFC Food gave our restaurant a seamless delivery channel—menus update instantly, riders sync in real time, and customers keep coming back.”</p>
-                    <div class="author">
-                        <strong>Moynal Hosen</strong>
-                        <span>Owner, Spice Route Restaurant</span>
+            <div class="showcase-grid">
+                <article class="showcase-card">
+                    <div class="showcase-meta">
+                        <span>Food Center</span>
+                        <span>Online food delivery</span>
                     </div>
+                    <h3>Food Center</h3>
+                    <p>A full-stack ordering experience that connects hungry customers to restaurants with real-time tracking and a secure admin portal for franchise operators.</p>
+                    <ul>
+                        <li>Multi-tenant admin</li>
+                        <li>Courier tracking</li>
+                        <li>Payment orchestration</li>
+                    </ul>
                 </article>
-                <article>
-                    <p>“Inventory Suite connects every outlet we run—from Gazipur warehouses to Dhaka storefronts—with real-time stock we can finally trust.”</p>
-                    <div class="author">
-                        <strong>Farhana Kabir</strong>
-                        <span>COO, FreshMart Bangladesh</span>
+                <article class="showcase-card">
+                    <div class="showcase-meta">
+                        <span>iQuote</span>
+                        <span>Quote design & share</span>
                     </div>
+                    <h3>iQuote</h3>
+                    <p>A creative studio that lets users compose beautiful quotes, apply branded templates, publish collections, and collaborate through shareable reading experiences.</p>
+                    <ul>
+                        <li>Template engine</li>
+                        <li>Team workspaces</li>
+                        <li>Reader analytics</li>
+                    </ul>
                 </article>
-                <article>
-                    <p>“Smart Bancharampur keeps every citizen informed—transport, school results, hospital rosters—all in Bangla on one trusted portal.”</p>
-                    <div class="author">
-                        <strong>Smart Bancharampur Team</strong>
-                        <span>Digital Service Program</span>
+                <article class="showcase-card">
+                    <div class="showcase-meta">
+                        <span>Smart Bancharampur</span>
+                        <span>Upazila services</span>
                     </div>
+                    <h3>Smart Bancharampur</h3>
+                    <p>A civic information portal for Bancharampur upazila residents covering transport, education, emergency contacts, hospitals, doctors, and community resources.</p>
+                    <ul>
+                        <li>Service directory</li>
+                        <li>Citizen alerts</li>
+                        <li>Offline kiosks</li>
+                    </ul>
+                </article>
+                <article class="showcase-card">
+                    <div class="showcase-meta">
+                        <span>Inventory Suite</span>
+                        <span>Inventory management</span>
+                    </div>
+                    <h3>Inventory Management Platform</h3>
+                    <p>Omnichannel stock visibility with automated purchase orders, supplier scorecards, and warehouse analytics for retailers across Bangladesh.</p>
+                    <ul>
+                        <li>Realtime stock sync</li>
+                        <li>Procurement rules</li>
+                        <li>Warehouse KPIs</li>
+                    </ul>
+                </article>
+                <article class="showcase-card">
+                    <div class="showcase-meta">
+                        <span>POS Core</span>
+                        <span>Point of Sale</span>
+                    </div>
+                    <h3>POS & Billing System</h3>
+                    <p>Modular POS terminals with loyalty, invoicing, and shift management that run offline-first for retail chains and restaurants.</p>
+                    <ul>
+                        <li>Unified catalog</li>
+                        <li>Loyalty engine</li>
+                        <li>Offline mode</li>
+                    </ul>
+                </article>
+                <article class="showcase-card">
+                    <div class="showcase-meta">
+                        <span>EduSphere</span>
+                        <span>School ops</span>
+                    </div>
+                    <h3>School Management System</h3>
+                    <p>Integrated SIS covering admissions, attendance, learning content, fees, and parent communications for K-12 networks.</p>
+                    <ul>
+                        <li>Guardian portal</li>
+                        <li>Assessment flows</li>
+                        <li>Finance sync</li>
+                    </ul>
+                </article>
+                <article class="showcase-card">
+                    <div class="showcase-meta">
+                        <span>Hospicare</span>
+                        <span>Hospital stack</span>
+                    </div>
+                    <h3>Hospital Management System</h3>
+                    <p>Patient-centric EHR, scheduling, pharmacy, and billing modules that streamline clinical ops for regional hospitals.</p>
+                    <ul>
+                        <li>EHR workflows</li>
+                        <li>Bed management</li>
+                        <li>Insurance claims</li>
+                    </ul>
                 </article>
             </div>
         </section>
 
         <section id="team" class="section team">
-            <div class="section-header">
+            <div class="section-heading">
                 <p class="eyebrow">Leadership</p>
-                <h2>The Titash Soft core team</h2>
-                <p>Experienced builders spanning strategy, engineering, and delivery ensure every engagement has accountable owners.</p>
+                <h2>Hands-on leads guiding each engagement.</h2>
+                <p>Strategy, engineering, QA, and delivery leads own their disciplines while operating as a single squad.</p>
             </div>
             <div class="team-grid">
                 <article class="team-card">
-                    <div class="avatar icon-animate" aria-hidden="true">MH</div>
-                    <h3>Mahfujur Rahman</h3>
-                    <p>Administration</p>
-                </article>
-                <article class="team-card">
-                    <div class="avatar icon-animate" aria-hidden="true">NU</div>
-                    <h3>Nazim Uddin</h3>
-                    <p>App Developer</p>
-                </article>
-                <article class="team-card">
-                    <div class="avatar icon-animate" aria-hidden="true">JH</div>
-                    <h3>Jahid Hasan</h3>
-                    <p>Backend Engineer</p>
+                    <div class="avatar icon-animate" aria-hidden="true">RI</div>
+                    <div>
+                        <h3>Md Rafiqul Islam</h3>
+                        <p>Managing Director</p>
+                    </div>
                 </article>
                 <article class="team-card">
                     <div class="avatar icon-animate" aria-hidden="true">TR</div>
-                    <h3>Tarek Reza</h3>
-                    <p>Chief Technology Officer</p>
-                </article>
-                <article class="team-card">
-                    <div class="avatar icon-animate" aria-hidden="true">MR</div>
-                    <h3>Mashur Rahman</h3>
-                    <p>Lead Sales & Marketing</p>
-                </article>
-                <article class="team-card">
-                    <div class="avatar icon-animate" aria-hidden="true">RI</div>
-                    <h3>Md Rafiqul Islam</h3>
-                    <p>Managing Director</p>
-                </article>
-                <article class="team-card">
-                    <div class="avatar icon-animate" aria-hidden="true">SN</div>
-                    <h3>Sabiqunnahar</h3>
-                    <p>QA Engineer</p>
-                </article>
-                <article class="team-card">
-                    <div class="avatar icon-animate" aria-hidden="true">DS</div>
-                    <h3>Dipu Sultan</h3>
-                    <p>Senior Backend Engineer</p>
-                </article>
-                <article class="team-card">
-                    <div class="avatar icon-animate" aria-hidden="true">TI</div>
-                    <h3>Tanvirul Islam</h3>
-                    <p>Senior Frontend Engineer</p>
+                    <div>
+                        <h3>Tarek Reza</h3>
+                        <p>Chief Technology Officer</p>
+                    </div>
                 </article>
                 <article class="team-card">
                     <div class="avatar icon-animate" aria-hidden="true">MS</div>
-                    <h3>Mohammad Tipu Sultan</h3>
-                    <p>Technical Lead Engineer</p>
+                    <div>
+                        <h3>Mohammad Tipu Sultan</h3>
+                        <p>Technical Lead Engineer</p>
+                    </div>
+                </article>
+                <article class="team-card">
+                    <div class="avatar icon-animate" aria-hidden="true">MR</div>
+                    <div>
+                        <h3>Mashur Rahman</h3>
+                        <p>Lead Sales & Marketing</p>
+                    </div>
+                </article>
+                <article class="team-card">
+                    <div class="avatar icon-animate" aria-hidden="true">DS</div>
+                    <div>
+                        <h3>Dipu Sultan</h3>
+                        <p>Senior Backend Engineer</p>
+                    </div>
+                </article>
+                <article class="team-card">
+                    <div class="avatar icon-animate" aria-hidden="true">TI</div>
+                    <div>
+                        <h3>Tanvirul Islam</h3>
+                        <p>Senior Frontend Engineer</p>
+                    </div>
+                </article>
+                <article class="team-card">
+                    <div class="avatar icon-animate" aria-hidden="true">SN</div>
+                    <div>
+                        <h3>Sabiqunnahar</h3>
+                        <p>QA Engineer</p>
+                    </div>
                 </article>
                 <article class="team-card">
                     <div class="avatar icon-animate" aria-hidden="true">SS</div>
-                    <h3>Sunny Sultan</h3>
-                    <p>UI/UX Developer</p>
-                </article>
-            </div>
-        </section>
-
-        <section id="projects" class="section projects">
-            <div class="section-header">
-                <p class="eyebrow">Recent work</p>
-                <h2>Products we recently launched</h2>
-                <p>Snapshots from platforms we design, engineer, and operate with our partners across consumer, civic, and productivity domains.</p>
-            </div>
-            <div class="project-grid">
-                <article class="project-card">
-                    <div class="project-media icon-animate" aria-hidden="true">
-                        <div class="project-tag">Food Center</div>
-                        <p>Online food delivery</p>
-                    </div>
-                    <div class="project-copy">
-                        <h3>Food Center</h3>
-                        <p>A full-stack ordering experience that connects hungry customers to restaurants with real-time tracking and a secure admin portal for franchise operators.</p>
-                        <ul>
-                            <li>Multi-tenant admin</li>
-                            <li>Courier tracking</li>
-                            <li>Payment orchestration</li>
-                        </ul>
+                    <div>
+                        <h3>Sunny Sultan</h3>
+                        <p>UI/UX Developer</p>
                     </div>
                 </article>
-                <article class="project-card">
-                    <div class="project-media icon-animate" aria-hidden="true">
-                        <div class="project-tag">iQuote</div>
-                        <p>Quote design & share</p>
-                    </div>
-                    <div class="project-copy">
-                        <h3>iQuote</h3>
-                        <p>A creative studio that lets users compose beautiful quotes, apply branded templates, publish collections, and collaborate through shareable reading experiences.</p>
-                        <ul>
-                            <li>Template engine</li>
-                            <li>Team workspaces</li>
-                            <li>Reader analytics</li>
-                        </ul>
+                <article class="team-card">
+                    <div class="avatar icon-animate" aria-hidden="true">JH</div>
+                    <div>
+                        <h3>Jahid Hasan</h3>
+                        <p>Backend Engineer</p>
                     </div>
                 </article>
-                <article class="project-card">
-                    <div class="project-media icon-animate" aria-hidden="true">
-                        <div class="project-tag">Smart Bancharampur</div>
-                        <p>Upozila services</p>
-                    </div>
-                    <div class="project-copy">
-                        <h3>Smart Bancharampur</h3>
-                        <p>A civic information portal for Bancharampur upazila residents covering transport, education, emergency contacts, hospitals, doctors, and community resources.</p>
-                        <ul>
-                            <li>Service directory</li>
-                            <li>Citizen alerts</li>
-                            <li>Offline kiosks</li>
-                        </ul>
+                <article class="team-card">
+                    <div class="avatar icon-animate" aria-hidden="true">MH</div>
+                    <div>
+                        <h3>Mahfujur Rahman</h3>
+                        <p>Administration</p>
                     </div>
                 </article>
-                <article class="project-card">
-                    <div class="project-media icon-animate" aria-hidden="true">
-                        <div class="project-tag">Inventory Suite</div>
-                        <p>Inventory management</p>
-                    </div>
-                    <div class="project-copy">
-                        <h3>Inventory Management Platform</h3>
-                        <p>Omnichannel stock visibility with automated purchase orders, supplier scorecards, and warehouse analytics for retailers across Bangladesh.</p>
-                        <ul>
-                            <li>Realtime stock sync</li>
-                            <li>Procurement rules</li>
-                            <li>Warehouse KPIs</li>
-                        </ul>
-                    </div>
-                </article>
-                <article class="project-card">
-                    <div class="project-media icon-animate" aria-hidden="true">
-                        <div class="project-tag">POS Core</div>
-                        <p>Point of Sale</p>
-                    </div>
-                    <div class="project-copy">
-                        <h3>POS & Billing System</h3>
-                        <p>Modular POS terminals with loyalty, invoicing, and shift management that run offline-first for retail chains and restaurants.</p>
-                        <ul>
-                            <li>Unified catalog</li>
-                            <li>Loyalty engine</li>
-                            <li>Offline mode</li>
-                        </ul>
-                    </div>
-                </article>
-                <article class="project-card">
-                    <div class="project-media icon-animate" aria-hidden="true">
-                        <div class="project-tag">EduSphere</div>
-                        <p>School ops</p>
-                    </div>
-                    <div class="project-copy">
-                        <h3>School Management System</h3>
-                        <p>Integrated SIS covering admissions, attendance, learning content, fees, and parent communications for K-12 networks.</p>
-                        <ul>
-                            <li>Guardian portal</li>
-                            <li>Assessment flows</li>
-                            <li>Finance sync</li>
-                        </ul>
-                    </div>
-                </article>
-                <article class="project-card">
-                    <div class="project-media icon-animate" aria-hidden="true">
-                        <div class="project-tag">Hospicare</div>
-                        <p>Hospital stack</p>
-                    </div>
-                    <div class="project-copy">
-                        <h3>Hospital Management System</h3>
-                        <p>Patient-centric EHR, scheduling, pharmacy, and billing modules that streamline clinical ops for regional hospitals.</p>
-                        <ul>
-                            <li>EHR workflows</li>
-                            <li>Bed management</li>
-                            <li>Insurance claims</li>
-                        </ul>
+                <article class="team-card">
+                    <div class="avatar icon-animate" aria-hidden="true">NU</div>
+                    <div>
+                        <h3>Nazim Uddin</h3>
+                        <p>App Developer</p>
                     </div>
                 </article>
             </div>
         </section>
 
         <section id="contact" class="section contact">
-            <div class="contact-card">
+            <div class="contact-panel">
                 <div>
-                    <p class="eyebrow">Let's talk</p>
-                    <h2>Ready to build with Titash Soft?</h2>
-                    <p>Share a bit about your product vision and we'll assemble a custom squad to make it real.</p>
-                    <div class="location-details">
-                        <h3>Office</h3>
-                        <p>Bancharampur, Brahmanbaria, Bangladesh</p>
-                    </div>
+                    <p class="eyebrow">Let's build together</p>
+                    <h2>Ready when you are to unblock your roadmap.</h2>
+                    <p>Tell us about your product vision, technical constraints, and timeline. We'll respond within two business days with next steps.</p>
                 </div>
-                <form class="contact-form">
-                    <div class="field-group">
-                        <label for="name">Full name</label>
-                        <input type="text" id="name" name="name" placeholder="Ariana Karim" required>
-                    </div>
-                    <div class="field-group">
-                        <label for="email">Work email</label>
-                        <input type="email" id="email" name="email" placeholder="you@company.com" required>
-                    </div>
-                    <div class="field-group">
-                        <label for="budget">Estimated budget</label>
-                        <select id="budget" name="budget">
-                            <option value="" selected>Select in BDT</option>
-                            <option value="5-10k">৳5k - ৳10k</option>
-                            <option value="10-25k">৳10k - ৳25k</option>
-                            <option value="25-50k">৳25k - ৳50k</option>
-                            <option value="50k+">৳50k+</option>
-                        </select>
-                    </div>
-                    <div class="field-group full">
-                        <label for="message">Project details</label>
-                        <textarea id="message" name="message" rows="4" placeholder="Tell us what you're building..."></textarea>
-                    </div>
-                    <button type="submit" class="btn">Request consultation</button>
-                </form>
-                <div class="map-wrapper">
-                    <iframe
-                        title="Titash Soft Office"
-                        loading="lazy"
-                        allowfullscreen
-                        referrerpolicy="no-referrer-when-downgrade"
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14600.061032280815!2d90.8038!3d23.7753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1718123456789"
-                    ></iframe>
+                <div class="contact-details">
+                    <a href="mailto:hello@titashsoft.com" class="contact-link">hello@titashsoft.com</a>
+                    <a href="tel:+8801625568609" class="contact-link">+880 1625-568609</a>
+                    <p>Available for remote/global engagements. Based in Bangladesh.</p>
                 </div>
             </div>
         </section>
     </main>
 
     <footer class="footer">
-        <div>
-            <div class="logo">Titash <span>Soft</span></div>
-            <p>© <span id="year"></span> Titash Soft. Product engineering partners for visionary teams.</p>
-        </div>
+        <p>© <span id="year"></span> Titash Soft. Product engineering partners for visionary teams.</p>
         <div class="footer-links">
-            <a href="#solutions">Solutions</a>
-            <a href="#services">Services</a>
-            <a href="#testimonials">Testimonials</a>
-            <a href="#contact">Contact</a>
+            <a href="#solutions">Capabilities</a>
+            <a href="#process">Approach</a>
+            <a href="#projects">Work</a>
+            <a href="#team">Team</a>
         </div>
     </footer>
 
