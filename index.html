@@ -144,6 +144,39 @@ main {
   color: var(--text);
 }
 
+.nav-menu a {
+  padding: 0.35rem 0.6rem;
+  border-radius: 999px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.nav-menu a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.nav-toggle-input {
+  display: none;
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 0.35rem;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.nav-toggle span {
+  width: 22px;
+  height: 2px;
+  background: var(--text);
+  border-radius: 999px;
+}
+
 .hero-grid {
   margin-top: 4rem;
   display: grid;
@@ -639,11 +672,48 @@ main {
   .nav-bar {
     flex-direction: column;
     align-items: flex-start;
+    gap: 0.75rem;
+    border-radius: var(--radius);
+    padding: 1rem 1.25rem;
+  }
+
+  .nav-toggle {
+    display: flex;
   }
 
   .nav-menu {
     width: 100%;
     justify-content: flex-start;
+    gap: 0.75rem;
+    flex-direction: column;
+    align-items: stretch;
+    background: rgba(5, 8, 20, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: var(--radius);
+    padding: 1rem;
+    display: none;
+  }
+
+  .nav-toggle-input:checked ~ .nav-menu {
+    display: flex;
+  }
+
+  .nav-menu li {
+    width: 100%;
+  }
+
+  .nav-menu a {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .nav-menu li:not(:last-child) a {
+    background: rgba(255, 255, 255, 0.04);
+  }
+
+  .nav-menu li:not(:last-child) a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--text);
   }
 
   .hero-grid {
@@ -691,6 +761,12 @@ main {
         <div class="frame">
             <div class="nav-bar">
                 <a class="brand" href="#top">Titash <span>Soft</span></a>
+                <input type="checkbox" id="navToggle" class="nav-toggle-input" aria-label="Toggle navigation" />
+                <label class="nav-toggle" for="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
                 <ul class="nav-menu">
                     <li><a href="#solutions">Capabilities</a></li>
                     <li><a href="#process">Approach</a></li>
@@ -1107,5 +1183,16 @@ main {
             </div>
         </div>
     </footer>
+    <script>
+    (function () {
+        const toggle = document.getElementById('navToggle');
+        if (!toggle) return;
+        document.querySelectorAll('.nav-menu a').forEach((link) => {
+            link.addEventListener('click', () => {
+                toggle.checked = false;
+            });
+        });
+    })();
+    </script>
 </body>
 </html>
