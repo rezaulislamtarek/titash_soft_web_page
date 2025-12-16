@@ -284,6 +284,12 @@ main {
   margin-top: 1rem;
 }
 
+.link-out::before {
+  content: '↗';
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
 .section {
   padding: 4.5rem 0;
 }
@@ -303,23 +309,89 @@ main {
   color: var(--muted);
 }
 
-.logo-row {
-  margin-top: 2.5rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-weight: 600;
-  color: rgba(255, 255, 255, 0.65);
+.partners {
+  padding: 4rem 0;
 }
 
-.logo-row span {
-  padding: 1rem 1.5rem;
+.partner-shell {
   border: 1px solid var(--stroke);
-  border-radius: var(--radius-sm);
-  background: rgba(255, 255, 255, 0.02);
-  text-align: center;
+  border-radius: var(--radius-lg);
+  padding: 2.5rem;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, rgba(10, 13, 32, 0.9), rgba(5, 8, 20, 0.85));
+  box-shadow: var(--shadow);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  align-items: center;
+}
+
+.partner-shell::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 15% 20%, rgba(102, 246, 255, 0.25), transparent 55%),
+    radial-gradient(circle at 85% 80%, rgba(168, 123, 255, 0.2), transparent 60%);
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+.partner-shell > * {
+  position: relative;
+  z-index: 1;
+}
+
+.partner-copy {
+  text-align: left;
+}
+
+.partner-copy .eyebrow {
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+.partner-title {
+  margin: 0;
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-family: 'Space Grotesk', 'Inter', sans-serif;
+}
+
+.partner-subtitle {
+  margin-top: 0.75rem;
+  color: var(--muted);
+  max-width: 420px;
+}
+
+.partner-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 0.75rem;
+}
+
+.partner-logos span {
+  padding: 0.7rem 1.2rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.05);
+  letter-spacing: 0.04em;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.85);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+.partner-logos span::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 8px rgba(102, 246, 255, 0.8);
 }
 
 .service-grid,
@@ -426,10 +498,21 @@ main {
   align-items: center;
 }
 
+.team-card h3 {
+  margin: 0;
+  font-family: 'Space Grotesk', 'Inter', sans-serif;
+}
+
+.team-card p {
+  margin: 0.15rem 0 0;
+  color: var(--muted);
+}
+
 .avatar {
   width: 60px;
   height: 60px;
-  border-radius: 16px;
+  border-radius: 50%;
+  flex-shrink: 0;
   background: linear-gradient(135deg, var(--accent-2), var(--accent));
   color: #030613;
   font-weight: 700;
@@ -439,24 +522,92 @@ main {
 }
 
 .contact-panel {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 2rem;
-  background: linear-gradient(140deg, rgba(102, 246, 255, 0.15), rgba(168, 123, 255, 0.15));
+  border: 1px solid var(--stroke);
+  border-radius: var(--radius-lg);
+  padding: 3rem;
+  position: relative;
+  overflow: hidden;
+  background: var(--surface);
   box-shadow: var(--shadow);
+  display: grid;
+  grid-template-columns: minmax(280px, 2fr) minmax(200px, 1fr);
+  gap: 2.5rem;
+  align-items: center;
 }
 
-.contact-details {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+.contact-panel::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top left, rgba(102, 246, 255, 0.25), transparent 55%),
+    radial-gradient(circle at bottom right, rgba(168, 123, 255, 0.25), transparent 60%);
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+.contact-panel > * {
+  position: relative;
+  z-index: 1;
+}
+
+.contact-panel h2 {
+  font-size: clamp(2rem, 3vw, 2.6rem);
+  margin-top: 0.5rem;
+}
+
+.contact-panel p {
   color: var(--muted);
 }
 
-.contact-link {
+.contact-pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.contact-pill {
+  border-radius: 999px;
+  padding: 0.75rem 1.4rem;
+  background: rgba(255, 255, 255, 0.08);
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.contact-cta {
+  border-radius: var(--radius);
+  padding: 1.1rem 1.4rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 240px;
+  justify-self: center;
+  align-self: center;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.contact-cta label {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.contact-cta a {
   font-size: 1.2rem;
   font-weight: 600;
   color: var(--text);
+}
+
+.contact-cta small {
+  color: var(--muted);
 }
 
 .site-footer {
@@ -514,6 +665,20 @@ main {
   .service-grid,
   .team-grid {
     grid-template-columns: 1fr;
+  }
+
+  .contact-panel {
+    grid-template-columns: 1fr;
+    padding: 2rem;
+  }
+
+  .contact-cta {
+    max-width: none;
+    width: 100%;
+  }
+
+  .partner-shell {
+    padding: 2rem;
   }
 }
 
@@ -576,14 +741,14 @@ main {
                     </article>
                     <article class="highlight-card secondary">
                         <p class="meta">Latest launch</p>
-                        <h3>Smart Bancharampur</h3>
-                        <p>Smart Bancharampur is the go-to Android companion for navigating the Brahmanbaria upazila.</p>
+                        <h3>Food Center</h3>
+                        <p>Food Center is a full-stack restaurant ordering platform covering takeout, dine-in check-in, and home delivery.</p>
                         <ul>
-                            <li>Comprehensive directory of schools, colleges, and cultural sites</li>
-                            <li>Instant access to emergency contacts, doctor schedules, and phone booking</li>
-                            <li>Transport insights, utilities, community updates</li>
+                            <li>Consumers browse menus, place orders, and choose pickup or delivery</li>
+                            <li>Restaurants manage catalogs, pricing, and real-time order queues</li>
+                            <li>Support for table check-ins, loyalty, and delivery tracking</li>
                         </ul>
-                        <a class="link-out" href="https://smartbancharampur.com" target="_blank" rel="noreferrer">smartbancharampur.com</a>
+                        <a class="link-out" href="https://foodcenter.titashsoft.com/" target="_blank" rel="noreferrer">foodcenter.titashsoft.com</a>
                     </article>
                 </div>
             </div>
@@ -591,18 +756,21 @@ main {
     </header>
 
     <main>
-        <section class="section proof">
+        <section class="partners" aria-label="Partners">
             <div class="frame">
-                <div class="section-head">
-                    <p class="eyebrow">Trusted by civic and growth teams</p>
-                    <h2>Public institutions and fast-moving startups count on us.</h2>
-                </div>
-                <div class="logo-row">
-                    <span>Smart Bancharampur</span>
-                    <span>SFC Food</span>
-                    <span>iQuotes</span>
-                    <span>JobFinder</span>
-                    <span>DiAtomicSoft</span>
+                <div class="partner-shell">
+                    <div class="partner-copy">
+                        <p class="eyebrow">Trusted by civic and growth teams</p>
+                        <h3 class="partner-title">Public institutions and fast-moving startups count on us.</h3>
+                        <p class="partner-subtitle">Civic innovation labs, logistics leaders, and SaaS founders rely on our pods to ship predictably.</p>
+                    </div>
+                    <div class="partner-logos">
+                        <span>Smart Bancharampur</span>
+                        <span>SFC Food</span>
+                        <span>iQuotes</span>
+                        <span>JobFinder</span>
+                        <span>DiAtomicSoft</span>
+                    </div>
                 </div>
             </div>
         </section>
@@ -910,11 +1078,18 @@ main {
                         <p class="eyebrow">Let's build together</p>
                         <h2>Ready when you are to unblock your roadmap.</h2>
                         <p>Tell us about your product vision, technical constraints, and timeline. We'll respond within two business days with next steps.</p>
+                        <div class="contact-pill-row">
+                            <span class="contact-pill">⚡️ Product strategy</span>
+                            <span class="contact-pill">🧠 Engineering leadership</span>
+                            <span class="contact-pill">💬 Delivery rituals</span>
+                        </div>
                     </div>
-                    <div class="contact-details">
-                        <a href="mailto:hello@titashsoft.com" class="contact-link">hello@titashsoft.com</a>
-                        <a href="tel:+8801625568609" class="contact-link">+880 1625-568609</a>
-                        <p>Available for remote/global engagements. Based in Bangladesh.</p>
+                    <div class="contact-cta">
+                        <label>Say hello</label>
+                        <a href="mailto:hello@titashsoft.com">hello@titashsoft.com</a>
+                        <label>Call us</label>
+                        <a href="tel:+8801625568609">+880 1625-568609</a>
+                        <small>Available for remote/global engagements. Based in Bangladesh.</small>
                     </div>
                 </div>
             </div>
@@ -923,7 +1098,7 @@ main {
 
     <footer class="site-footer">
         <div class="frame">
-            <p>© 2024 Titash Soft. Product engineering partners for visionary teams.</p>
+            <p>© 2026 Titash Soft. Product engineering partners for visionary teams.</p>
             <div class="footer-links">
                 <a href="#solutions">Capabilities</a>
                 <a href="#process">Approach</a>
