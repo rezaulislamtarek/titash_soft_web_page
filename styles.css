@@ -462,7 +462,7 @@ main {
 .avatar {
   width: 56px;
   height: 56px;
-  border-radius: 14px;
+  border-radius: 50%;
   display: grid;
   place-items: center;
   font-weight: 600;
