@@ -3,3 +3,4 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/titashso/public_html/
     - /bin/cp -R * $DEPLOYPATH
+    - /bin/cp -R .htaccess $DEPLOYPATH 2>/dev/null || true
